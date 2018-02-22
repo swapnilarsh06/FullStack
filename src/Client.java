@@ -5,6 +5,7 @@ import java.util.*;
 class Client {
 
 	public static void executePython(String inputFilePath) { 
+                System.out.println("Starting python execution");
 		executePythonScript();
 		createSocketAndListen(inputFilePath);
 	}
