@@ -77,6 +77,9 @@ public class HomePage2 extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         buttonGroup2 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTree1 = new javax.swing.JTree();
@@ -136,9 +139,6 @@ public class HomePage2 extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
         jButton23 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -166,6 +166,31 @@ public class HomePage2 extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(36, 47, 85));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setPreferredSize(new java.awt.Dimension(320, 600));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jButton1.setText("Exit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 120, 50));
+
+        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jButton3.setText("Get Data");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 120, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 600));
 
         jPanel8.setBackground(new java.awt.Color(36, 47, 85));
         jPanel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -320,7 +345,7 @@ public class HomePage2 extends javax.swing.JFrame {
         jRadioButton3.setSelected(true);
         jRadioButton3.setText("Move Data directly from Tables/Views");
         jRadioButton3.setBorder(null);
-        jPanel6.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 290, 50));
+        jPanel6.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 350, 50));
 
         jRadioButton4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup2.add(jRadioButton4);
@@ -423,7 +448,7 @@ public class HomePage2 extends javax.swing.JFrame {
 
         jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel21.setText("Specify Target HDFS Path");
-        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 180, 20));
+        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 220, 20));
         jPanel10.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 430, 30));
 
         jButton16.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
@@ -470,7 +495,7 @@ public class HomePage2 extends javax.swing.JFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 140, 50));
+        jPanel9.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 150, 50));
 
         getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 600));
 
@@ -513,7 +538,7 @@ public class HomePage2 extends javax.swing.JFrame {
 
         jLabel26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel26.setText("Specify Target HDFS Path");
-        jPanel12.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 180, 20));
+        jPanel12.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 220, 20));
         jPanel12.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 430, 30));
 
         jButton23.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
@@ -526,31 +551,6 @@ public class HomePage2 extends javax.swing.JFrame {
         jPanel12.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 120, 50));
 
         getContentPane().add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 480, 600));
-
-        jPanel1.setBackground(new java.awt.Color(36, 47, 85));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.setPreferredSize(new java.awt.Dimension(320, 600));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton1.setText("Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 120, 50));
-
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton3.setText("Get Data");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 120, 50));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 600));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -587,7 +587,6 @@ public class HomePage2 extends javax.swing.JFrame {
         jRadioButton1.setText("File");
         jRadioButton1.setMaximumSize(new java.awt.Dimension(100, 25));
         jRadioButton1.setMinimumSize(new java.awt.Dimension(100, 25));
-        jRadioButton1.setOpaque(false);
         jRadioButton1.setPreferredSize(new java.awt.Dimension(100, 25));
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -603,7 +602,6 @@ public class HomePage2 extends javax.swing.JFrame {
         jRadioButton2.setText("Database");
         jRadioButton2.setMaximumSize(new java.awt.Dimension(100, 25));
         jRadioButton2.setMinimumSize(new java.awt.Dimension(100, 25));
-        jRadioButton2.setOpaque(false);
         jRadioButton2.setPreferredSize(new java.awt.Dimension(100, 25));
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -627,7 +625,7 @@ public class HomePage2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("SOURCE TYPE");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 160, 50));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 230, 50));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 600));
 
@@ -648,7 +646,7 @@ public class HomePage2 extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel3.setText("SELECT DATABASE TYPE");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 270, 30));
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 310, 30));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("NEXT");
@@ -997,6 +995,9 @@ public class HomePage2 extends javax.swing.JFrame {
                     }
                     bw.close();
                     writer.close();
+                    File f = new File(FILENAME);
+                    String absolutePath = f.getAbsolutePath();
+                    Client.executePython(absolutePath);
                     JOptionPane.showMessageDialog(null,  "Successfully written to File");
                     //System.out.println(leaf_list.size());
                 }
@@ -1023,6 +1024,9 @@ public class HomePage2 extends javax.swing.JFrame {
                 bw.close();
                 writer.close();
                 System.out.println(jTextArea2.getText().replaceAll("\n", " "));
+                File f = new File(FILENAME);
+                String absolutePath = f.getAbsolutePath();
+                Client.executePython(absolutePath);
                 JOptionPane.showMessageDialog(null,  "Successfully written to File");
                 
             } catch (IOException ex) {

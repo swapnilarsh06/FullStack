@@ -26,7 +26,7 @@ class Client {
 		DataInputStream in = null;
 		PrintStream out = null;
 		try {
-			rpiSocket = new Socket("localhost",5431); 
+			rpiSocket = new Socket("quickstart.cloudera",54310); 
 			if(rpiSocket == null) {
 				System.out.println("Null socket");
 				System.exit(0);
