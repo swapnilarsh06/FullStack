@@ -1,0 +1,1 @@
+1|DATABASE||/user/cloudera/|Y|1|Y|||jdbc:oracle:thin:@localhost:1521:orcl|HR|HR
